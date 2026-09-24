@@ -12,7 +12,7 @@ class PaymentMethodType extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields = [];
+    protected $allowedFields = ['id', 'name'];
 
     protected bool $allowEmptyInserts = false;
 }

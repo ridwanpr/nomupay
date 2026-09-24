@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 use CodeIgniter\Model;
@@ -17,6 +18,7 @@ class UserModel extends Model
         'email',
         'password',
         'last_login_ip',
+        'is_used',
     ];
 
     protected bool $allowEmptyInserts = false;

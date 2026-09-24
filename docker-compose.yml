@@ -1,0 +1,19 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nomupay-app
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - nomupay-net
+    environment:
+      CI_ENVIRONMENT: development
+
+networks:
+  nomupay-net:
+    external: true

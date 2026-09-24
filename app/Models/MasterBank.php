@@ -12,7 +12,7 @@ class MasterBank extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields = [];
+    protected $allowedFields = ['id', 'name', 'code'];
 
     protected bool $allowEmptyInserts = false;
 }

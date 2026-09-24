@@ -12,7 +12,7 @@ class Topup extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields = ['id', 'user_id', 'amount', 'payment_method', 'status'];
+    protected $allowedFields = ['id', 'user_id', 'amount', 'payment_method', 'payment_link', 'status'];
 
     protected bool $allowEmptyInserts = false;
 }
